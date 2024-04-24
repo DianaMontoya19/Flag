@@ -14,14 +14,16 @@ public class FlagManager : MonoBehaviour
     private static FlagManager _instance;
     [SerializeField] private FlagObject _flagObject;
     [SerializeField] private Flag _flag;
+   
     [SerializeField] private Transform _position;
     //[SerializeField] private Player _alive;
      public TextMeshProUGUI _teamBlue;
      public TextMeshProUGUI _teamRed;
      public TextMeshProUGUI _teamBlue_Menu;
      public TextMeshProUGUI _teamRed_Menu;
-    public int _pointBlue = 0;
+     public int _pointBlue = 0;
      public int _pointRed = 0;
+    
     
     
     public static FlagManager Instance => _instance;
@@ -39,6 +41,7 @@ public class FlagManager : MonoBehaviour
     private void Start()
     {
         _flagObject.Flags(_flag, _position);
+       
 
     }
     
@@ -49,6 +52,7 @@ public class FlagManager : MonoBehaviour
         currentState = FlagStatesEnum.Captured;
         _flagObject.transform.parent = capturer;
         _flagObject.gameObject.SetActive(false);
+       
 
 
     }

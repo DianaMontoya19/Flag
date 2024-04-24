@@ -86,6 +86,12 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 302652687035653072}
   m_SourcePrefab: {fileID: 100100000, guid: e14b17785800a554e8d0cb8b3cb54811, type: 3}
+--- !u!1 &3341776906352176426 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2565966179046287821, guid: e14b17785800a554e8d0cb8b3cb54811,
+    type: 3}
+  m_PrefabInstance: {fileID: 1007756012377195751}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3892646012510397103 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4321538289921435208, guid: e14b17785800a554e8d0cb8b3cb54811,
@@ -128,6 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dirtFoots: {fileID: 4997598103543944800}
   health: 100
+  objectFlag: {fileID: 3341776906352176426}
 --- !u!198 &4997598103543944800 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 5235236921716167303, guid: e14b17785800a554e8d0cb8b3cb54811,

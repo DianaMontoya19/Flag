@@ -12,9 +12,10 @@ public class CharacterIA : MonoBehaviour
     private DamageIA _damage;
     public float health = 100f;
     private AiInput _agent;
-
+    public GameObject objectFlag;
     public void Awake()
     {
+        //
         _instance = this;
         _animator = GetComponent<Animator>();
         //_agent = GetComponent<AiInput>();
@@ -63,6 +64,7 @@ public class CharacterIA : MonoBehaviour
     public void Die()
     {
         _animator.SetTrigger("Death");
+        Desactivate();
         
         StartCoroutine(Timer());
     }
@@ -72,5 +74,17 @@ public class CharacterIA : MonoBehaviour
         _animator.SetTrigger("Life");
         health = 100;
     }
-
+    public void Activate()
+    {
+        //GameObject objetoInterno = GameObject.Find(objectFlag);
+        objectFlag.SetActive(true);
+        Debug.Log("bandera");
+    }
+    public void Desactivate()
+    {
+        //GameObject objetoInterno = GameObject.Find(objectFlag);
+        objectFlag.SetActive(false);
+        Debug.Log("bandera");
+    }
+   
 }

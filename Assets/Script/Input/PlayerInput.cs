@@ -93,6 +93,7 @@ public class PlayerInput : IMovable
         {
             FlagManager.Instance.CaptureFlag(Character.Instance.transform, true);
             _mine = true;
+            Character.Instance.Activate();
         }
         if(collision.gameObject.TryGetComponent(out Player iaPlayer))
         {
@@ -100,7 +101,7 @@ public class PlayerInput : IMovable
             if(IA.health<=0)
             {
                 IA.Die();
-                iaPlayer.Desapear(_position);
+               iaPlayer.Desapear(_position);
 
                 if (FlagManager.Instance.capturedBy == false)
                 {
@@ -121,6 +122,7 @@ public class PlayerInput : IMovable
             FlagManager.Instance.Respawn();
             FlagManager.Instance.Point(Team.Blue);
             _mine = false;
+            Character.Instance.Desactivate();
         }
     }
 

@@ -4908,11 +4908,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: flagRed
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 440285e9a8bc3d248a73fa63d2188c5c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 440285e9a8bc3d248a73fa63d2188c5c, type: 3}
+--- !u!1 &2565966179046287821 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 440285e9a8bc3d248a73fa63d2188c5c,
+    type: 3}
+  m_PrefabInstance: {fileID: 3412969257182778524}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2943089203502134135 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 440285e9a8bc3d248a73fa63d2188c5c,
@@ -5173,6 +5184,7 @@ MonoBehaviour:
   velocity: 0
   defense: 0
   attack: 0
+  objectFlag: {fileID: 2565966179046287821}
 --- !u!4 &4240946644159336401 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fc3bc47454ef4564fa640296ba253dd5,

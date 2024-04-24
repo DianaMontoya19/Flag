@@ -15,6 +15,7 @@ public enum Team
 // Clase que controla el comportamiento del jugador
 public class Player : MonoBehaviour
 {
+    
     private Team _team; // El equipo al que pertenece el jugador
     public Team Team => _team;
     private Character _character; // El personaje del jugador
@@ -86,6 +87,7 @@ public class Player : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         _movable.OnTriggerExit(other);
+        
     }
 
     // Este método mata al jugador
@@ -93,14 +95,15 @@ public class Player : MonoBehaviour
     {
 
         StartCoroutine(Timer(position));
-        
+
     }
     IEnumerator Timer(Vector3 position)
     {
         yield return new WaitForSeconds(2f);
 
         transform.position = position;
-        
+
     }
+    
 
 }

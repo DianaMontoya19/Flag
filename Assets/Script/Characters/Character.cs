@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public abstract class Character : MonoBehaviour
@@ -12,6 +13,7 @@ public abstract class Character : MonoBehaviour
     public float velocity;
     public float defense;
     public float attack;
+    public GameObject objectFlag;
 
 
     private Animator _animator;
@@ -21,8 +23,10 @@ public abstract class Character : MonoBehaviour
 
     public void Awake()
     {
+        objectFlag.SetActive(false);
         _animator = GetComponent<Animator>();
         _instance = this;
+        
     }
     public void WalkAnimations(float VelY, float VelX)
     {
@@ -89,6 +93,7 @@ public abstract class Character : MonoBehaviour
     public void Die()
     {
       _animator.SetTrigger("Death");
+        Desactivate();
         StartCoroutine(Timer());
         
         
@@ -104,5 +109,18 @@ public abstract class Character : MonoBehaviour
     public void TakeDamageAnimation()
     {
         _animator.SetTrigger("Hit");
+    }
+
+    public void Activate()
+    {
+        //GameObject objetoInterno = GameObject.Find(objectFlag);
+        objectFlag.SetActive(true);
+        Debug.Log("bandera");
+    }
+    public void Desactivate()
+    {
+        //GameObject objetoInterno = GameObject.Find(objectFlag);
+        objectFlag.SetActive(false);
+        Debug.Log("bandera");
     }
 }

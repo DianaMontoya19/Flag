@@ -104,6 +104,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dirtFoots: {fileID: 8686748241811845501}
   health: 100
+  objectFlag: {fileID: 1610965331574966114}
+--- !u!1 &1610965331574966114 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7308450294432789366, guid: eddd5dd02d518a841912f0fae06404cf,
+    type: 3}
+  m_PrefabInstance: {fileID: 8302272376263750676}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5984301057112266831 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2322479340984921179, guid: eddd5dd02d518a841912f0fae06404cf,

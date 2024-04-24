@@ -11,6 +11,7 @@ TagManager:
   - PlayerFlag
   - TeamA
   - music
+  - flag
   layers:
   - Default
   - TransparentFX

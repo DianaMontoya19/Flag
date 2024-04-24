@@ -51,6 +51,7 @@ public class AiInput : IMovable
             _isActive = true;
             FlagManager.Instance.CaptureFlag(CharacterIA.Instance.transform, false); // Captura la bandera
             _currentState = IsFlagCaptured; // Cambia el estado del AI
+            CharacterIA.Instance.Activate();
         }
         // Si el objeto con el que colisiona es un jugador, cambia el estado de la IA
         if (collision.gameObject.TryGetComponent(out Player play))
@@ -61,6 +62,7 @@ public class AiInput : IMovable
             if(player.health <=0)
             {
                 player.Die();
+               
                 play.Desapear(_position);
                 //player.Life();
 
@@ -82,6 +84,7 @@ public class AiInput : IMovable
             FlagManager.Instance.Point(Team.Red);
             _currentState = IsFlagCaptured;
             _isActive = false;
+            CharacterIA.Instance.Desactivate();
         }
     }
 

@@ -14449,7 +14449,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _flagObject: {fileID: 1201014951}
-  _flag: {fileID: 8036067632671195346, guid: 393d9523debf32e49871a62ec147d3a0, type: 3}
+  _flag: {fileID: 8036067632671195346, guid: bcaaf66ed8762d44ebf72588916b6dec, type: 3}
   _position: {fileID: 1201014952}
   _teamBlue: {fileID: 44508660}
   _teamRed: {fileID: 230263532}
@@ -15480,7 +15480,7 @@ GameObject:
   - component: {fileID: 1201014950}
   m_Layer: 0
   m_Name: Flag
-  m_TagString: Untagged
+  m_TagString: flag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

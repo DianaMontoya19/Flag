@@ -110,6 +110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dirtFoots: {fileID: 1008877418004673865}
   health: 100
+  objectFlag: {fileID: 8227808310284708720}
 --- !u!1 &5636843423172433980 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4313766338090973049, guid: 9cb50f2c31f63f04888ba4d5c806276f,
@@ -132,3 +133,9 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 128
+--- !u!1 &8227808310284708720 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 560848287608161333, guid: 9cb50f2c31f63f04888ba4d5c806276f,
+    type: 3}
+  m_PrefabInstance: {fileID: 8495905025279897413}
+  m_PrefabAsset: {fileID: 0}
